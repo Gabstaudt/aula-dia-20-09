@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Formulário</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <fieldset>
+        <legend> Formulário Matrícula </legend>
+        <form action="sucesso.html" method="get">
+            <p>
+                <label> Nome: </label>
+                <input type="text" name="nome" placeholder="Digite aqui" maxlength="50" required><br>
+
+                <label> Data de Nascimento </label>
+                <input type="date" name="data_de_nascimento" required><br>
+
+                <label> Email: </label>
+                <input type="email" name="email" placeholder="Digite aqui" required><br>
+
+                <label> Telefone: </label>
+                <input type="text" name="telefone" maxlength="11" placeholder="Digite seu número com DDD aqui" required><br>
+
+                <label> Série: </label>
+                <select name="serie" required>
+                    <option>1° Série</option>
+                    <option>2° Série</option>
+                    <option>3° Série</option>
+                    <option>4° Série</option>
+                </select><br>
+
+                <label> Turno: </label><br>
+                <input type="radio" name="turno" value="manha" required> Manhã <br>
+                <input type="radio" name="turno" value="tarde" required> Tarde <br>
+                <input type="radio" name="turno" value="noite" required> Noite <br>
+
+                <label> Atividades Extra-curriculares:</label><br>
+                <input type="checkbox" name="atividades_extracurriculares" value="teatro"> Teatro <br>
+                <input type="checkbox" name="atividades_extracurriculares" value="ballet"> Ballet <br>
+                <input type="checkbox" name="atividades_extracurriculares" value="pintura"> Pintura <br>
+                <input type="checkbox" name="atividades_extracurriculares" value="judo"> Judô <br>
+                <input type="checkbox" name="atividades_extracurriculares" value="futebol"> Futebol <br><br>
+
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
